@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    <title>Add note</title>
+    <style>
+        .search{
+            border-radius: 5px;
+        }
+        .card-hover:hover{
+            transform: scale(1.1);
+            perspective: 800px;
+            transition: all 0.3s ease-out;
+        }
+        .card{
+            margin-bottom: 10px;
+            background-color: #7080904d;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav1 container-fluid">
+        <div class="row bg-dark">
+            <div class="col-md-6 col-sm-3">
+
+                <ul class="nav py-3">
+                    <li class="nav-item">
+                        <h4 class="text-white ">Magic Note</h4>
+                    </li>    
+                    
+                </ul>
+            </div>
+            <div class="col-md-3 offset-md-3">
+                <ul class="nav py-3"> 
+                <li class="nav-item position-relative float-right">
+                    <input type="text" class="py-1 my-auto  " name="" placeholder="search" id="search">
+                    <button class="btn btn-outline-success my-auto ml-3" id="search_btn">search</button>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container add-note">
+        <div class="row">
+            <h1 class="text-center mt-3">
+                Welcome To Magic Notes...
+            </h1>
+            <div class="row ">
+                <div class="card border">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Add Note </h3>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" id="input_txt"  rows="3" placeholder="write here..." class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-primary mt-5" id="addbtn">Add Note</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+    </div>
+    <div class=" row container-fluid" id="notes">
+        <h4>No notes added.. </h4>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
